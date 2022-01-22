@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,0.9122023809523809) 35%, rgba(75,86,88,1) 100%);
+}
+  
+header {
+    height: 20vh;
+}
+
+.header > h6 {
+    font-size: 70px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(55,168,199);
+}
+
+.grid-wrapper {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.grid {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    height: 600px;
+    width: 600px;
+
+}
+
+.grid div {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.freeDisk {
+    background-color: rgba(245, 245, 245, 0.904);
+    border-radius: 50%;
+    flex-grow: 1;
+}
+
+.firstPlayerDisk {
+    background-color:rgb(55,168,199);;
+    border-radius: 50%;
+}
+
+.secondPlayerDisk {
+    background-color: rgb(230, 218, 56);
+    border-radius: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  
+  #modal2 {
+    display: None;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    color: red;
+    text-align: center;
+    font-size: xx-large;
+  }
+
+
+  #gameBoard {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding-right: 20%;
+      padding-left: 20%;
+  }
+
+  #score-box {
+      display: flex;
+      flex-direction: column;
+      width: 55%;
+      border:rgba(0, 0, 0, 0.2) solid 2px;
+      padding: 5px;
+      text-align: center;
+  }
+
+  #score-display {
+      display: flex;
+      color:azure;
+      justify-content: space-between;
+  }
+
+  #current-scores  {
+      color:azure;
+  }

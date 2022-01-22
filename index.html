@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CONNECT-4 GAME!</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="scripts/app.js" charset="utf-8"></script>
+  </head>
+  <body>
+      <header class="header">
+          <h6>Connect 4</h6>
+        </header>
+      <div class="controls-wrapper">
+          <div id="myModal" class="modal">
+            <div id= "modal1" class="modal-content">
+              <form>
+                <h3>Name the players & start the game</h3>
+                <label for="fname">Player 1:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Player 2:</label>
+                <input type="text" id="lname" name="lname">
+              </form>
+              <br>
+              <button id="submitNames">Start Playing</button>
+            </div>
+            <div id="modal2">
+              <p id="congrats"></p>
+              <div id="game-options">
+                <button id="keep-playing">Continue Playing</button>
+                <button id="reset-game">Start New Game</button>
+              </div>
+            </div>
+          </div>
+          <div id="gameBoard">
+            <div><button id="resetBtn">Reset Game</button></div>
+            <div id="score-box">
+              <p id="current-scores">Current Scores</p>
+              <div id="score-display">
+                <div id="player1score"></div>
+                <div id="player2score"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="grid-wrapper">
+          <div class="grid"></div>
+     </div>
+  </body>
+</html>
+
